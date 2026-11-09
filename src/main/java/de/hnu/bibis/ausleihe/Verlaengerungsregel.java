@@ -15,7 +15,7 @@ import java.time.LocalDate;
 public class Verlaengerungsregel {
 
     public static final int MAX_VERLAENGERUNGEN = 3;
-    public static final int LEIHFRIST_TAGE = 28;
+    public static final int LEIHFRIST_TAGE = 21; /*neu*/
 
     /**
      * Prüft, ob eine Ausleihe verlängert werden darf.
@@ -36,7 +36,7 @@ public class Verlaengerungsregel {
      * Berechnet das neue Fälligkeitsdatum nach einer Verlängerung.
      *
      * @param faelligAm bisheriges Fälligkeitsdatum
-     * @return bisheriges Fälligkeitsdatum plus 28 Tage
+     * @return bisheriges Fälligkeitsdatum plus 21 Tage
      */
     public LocalDate neuesFaelligkeitsdatum(LocalDate faelligAm) {
         return faelligAm.plusDays(LEIHFRIST_TAGE);
