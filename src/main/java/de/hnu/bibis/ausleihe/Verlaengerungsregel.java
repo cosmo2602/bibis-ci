@@ -36,7 +36,7 @@ public class Verlaengerungsregel {
      * Berechnet das neue Fälligkeitsdatum nach einer Verlängerung.
      *
      * @param faelligAm bisheriges Fälligkeitsdatum
-     * @return bisheriges Fälligkeitsdatum plus 28 Tage
+     * @return bisheriges Fälligkeitsdatum plus 21 Tage
      */
     public LocalDate neuesFaelligkeitsdatum(LocalDate faelligAm) {
         return faelligAm.plusDays(LEIHFRIST_TAGE);
